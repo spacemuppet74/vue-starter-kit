@@ -1,4 +1,8 @@
 import Vue from "vue";
+import Buefy from "buefy";
+import "buefy/lib/buefy.css";
+
+Vue.use(Buefy);
 
 import App from "./App.vue";
 
@@ -12,4 +16,4 @@ fontawesome.library.add(faThumbsUp);
 
 new Vue({
   render: h => h(App)
-}).$mount("#app");
+}).$mount("#root");

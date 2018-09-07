@@ -1,13 +1,33 @@
 <template>
-<div class="jumbotron">
-  <h1 class="display-4">
-    {{ title }}
-  </h1>
-  <p class="lead">If you see this message, everything is up and running</p>
-  <hr class="my-4">
-  <p>{{time.toLocaleString()}}</p>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-</div>
+<section class="section">
+  <div class="container">
+  <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  </nav>
+  <div class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          {{ title }}
+        </h1>
+        <h2 class="subtitle">
+          {{ time }}
+        </h2>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
 </template>
 
 <script>
@@ -26,6 +46,4 @@ export default {
 </style>
 
 <style lang="scss">
-  @import './assets/sass/_custom.scss';
-  @import '~bootstrap/scss/bootstrap.scss';
 </style>
